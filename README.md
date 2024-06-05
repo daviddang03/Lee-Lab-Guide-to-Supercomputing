@@ -25,6 +25,21 @@ scancel JOBIDNUMBER (EXAMPLE: scancel 123456)
 To view files, you would usually use vi (EXAMPLE: vi Notes.txt), but Mobaxterm allows you to use notepad to edit files, which is much easier to use than vim. I would recommend just using notepad to edit files- this is done by right clicking the file and selecting "Open with default text editor". 
 <br />
 ![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/6dda874d-4997-4ae6-a932-3fb767f8f358)
+# Creating an Alias
+Let's say you want to navigate to the lab's directory by cd'ing <br />
+You would have to cd multiple times by doing: <br />
+cd DFS-L <br />
+cd DATA <br />
+cd lee <br />
+cd USERNAME <br />
+<br />
+This is quite cumbersome and it would be great if we could create some sort of short command that can do all of this in one line. This is what is known as an alias. An alias can be created by editing the .bash_profile or .bashrc. An example alias is shown here:
+<br />
+![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/0cc81a76-0a0f-4b36-9898-31d91a5d5e38)
+<br />
+So here by typing in DATA at the commandline, it will automatically execute the displayed operations.
+<br />
+
 # Changing the Partition:<br />
 Partitions are the different sets of CPUs/GPUs within greenplanet, with their own processor types and speeds. You cannot run a parrallel job across multiple partitions (technically you could but not recommended); however, you can select multiple partitions in the batch file (EXAMPLE: #SBATCH --partition=nes2.8,ilg2.3,brd2.4,has2.5) and the system will pick whichever partition is available. Each partitions is made up of nodes which are the individual computers that make up the cluser and each node will have several CPUs. Here are the list of available partitions that you can use:<br />
 ![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/b94e3d9c-034a-44cd-aeaa-2e9835491756)<br />
