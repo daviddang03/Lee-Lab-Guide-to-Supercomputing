@@ -26,8 +26,8 @@ To view files, you would usually use vi (EXAMPLE: vi Notes.txt), but Mobaxterm a
 <br />
 ![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/6dda874d-4997-4ae6-a932-3fb767f8f358)
 # Changing the Partition:<br />
-Partitions are the different sets of CPUs/GPUs within greenplanet, with their own processor types and speeds. You cannot run a parrallel job across multiple partitions (technically you could but not recommended); however, you can select multiple partitions in the batch file (EXAMPLE: #SBATCH --partition=nes2.8,ilg2.3,brd2.4,has2.5) and the system will pick whichever partition is available. Each partitions is made up of nodes which are the individual computers that make up the cluser and each node will have several CPUs. Here are the list of available partitions that you can use:
-
+Partitions are the different sets of CPUs/GPUs within greenplanet, with their own processor types and speeds. You cannot run a parrallel job across multiple partitions (technically you could but not recommended); however, you can select multiple partitions in the batch file (EXAMPLE: #SBATCH --partition=nes2.8,ilg2.3,brd2.4,has2.5) and the system will pick whichever partition is available. Each partitions is made up of nodes which are the individual computers that make up the cluser and each node will have several CPUs. Here are the list of available partitions that you can use:<br />
+![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/b94e3d9c-034a-44cd-aeaa-2e9835491756)<br />
 
 # Running a Lumerical Script:<br />
 To run a Lumerical FDTD file, you have to first load the file onto the cluster by dragging and dropping your .fsp file into the files on the leftside of the mobaxterm window.<br />
