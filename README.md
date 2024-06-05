@@ -23,13 +23,20 @@ scancel JOBIDNUMBER (EXAMPLE: scancel 123456)
 <br />
 To view files, you would usually use vi (EXAMPLE: vi Notes.txt), but Mobaxterm allows you to use notepad to edit files, which is much easier to use than vim. I would recommend just using notepad to edit files- this is done by right clicking the file and selecting "Open with default text editor". 
 <br />
+![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/6dda874d-4997-4ae6-a932-3fb767f8f358)
 
 # Running a Lumerical Script:<br />
 To run a Lumerical FDTD file, you have to first load the file onto the cluster by dragging and dropping your .fsp file into the files on the leftside of the mobaxterm window.<br />
 ![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/0ab554d9-ff81-411e-80ad-98d52ca5bb1e)<br />
 The next step is to load a batch file that tells SLURM (the workload manager used in GP) to run your .fsp file or python file. A template batch file can be found in this github repository (titled "run_slurm.lumerical"). You will have to edit the batch file by changing the name of the .fsp to match yours.
 <br />
+<br />
 You should now have an .fsp file and a batch file in your directory (you can check by typing ls).
 To run the file, simply type sbatch run_slurm.lumerical. To access the results, simply download the .fsp to your computer and open it.
+<br />
+![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/b035ee84-e5a6-4eea-b54e-8cf09e72c3e1)
+![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/927e3e51-83ec-4fba-a8d8-4e3f32f62c67)
+
+
 
 
