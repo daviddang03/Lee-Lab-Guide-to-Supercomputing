@@ -21,6 +21,7 @@ squeue --job JOBIDNUMBER (Views the progress of submitted jobs on the cluster, E
 sbatch (Submits a job to SLURM, EXAMPLE sbatch run_slurm.lumerical)<br />
 scancel JOBIDNUMBER (EXAMPLE: scancel 123456) 
 <br />
+<br />
 To view files, you would usually use vi (EXAMPLE: vi Notes.txt), but Mobaxterm allows you to use notepad to edit files, which is much easier to use than vim. I would recommend just using notepad to edit files- this is done by right clicking the file and selecting "Open with default text editor". 
 <br />
 ![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/6dda874d-4997-4ae6-a932-3fb767f8f358)
