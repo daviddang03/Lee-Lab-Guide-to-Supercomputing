@@ -6,7 +6,8 @@ Once you have your account, download Mobaxterm (https://mobaxterm.mobatek.net/do
 On the main terminal of Mobaxterm, type ssh -Y USERNAME@gplogin2.ps.uci.edu<br />
 And enter your password to login to the "login node"<br />
 ![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/45e04dc0-5c9f-4bcf-a8ad-4af6ffd713e7)
-
+<br />
+Other helpful resources: https://knowledge.ps.uci.edu/shelves/greenplanet
 
 To use and navigate the cluster, you must become familiar with UNIX commands.<br />
 
