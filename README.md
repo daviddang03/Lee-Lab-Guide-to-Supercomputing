@@ -28,10 +28,10 @@ To view files, you would usually use vi (EXAMPLE: vi Notes.txt), but Mobaxterm a
 ![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/6dda874d-4997-4ae6-a932-3fb767f8f358)
 # Creating an Alias
 Let's say you want to navigate to the lab's directory by cd'ing <br />
-You would have to cd multiple times by doing: <br />
-cd DFS-L <br />
-cd DATA <br />
-cd lee <br />
+You would have to cd multiple times by doing (NOTE: that the forward slash / is important): <br />
+cd /DFS-L <br />
+cd /DATA <br />
+cd /lee <br />
 cd USERNAME <br />
 <br />
 This is quite cumbersome and it would be great if we could create some sort of short command that can do all of this in one line. This is what is known as an alias. An alias can be created by editing the .bash_profile or .bashrc. An example alias is shown here:
