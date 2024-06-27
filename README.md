@@ -58,9 +58,10 @@ To run the file, simply type sbatch run_slurm.lumerical. To access the results, 
 ![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/927e3e51-83ec-4fba-a8d8-4e3f32f62c67)
 
 # Miscellaneous:<br />
-To copy a conda environment from python, do the following:
-conda activate (your environment)
-conda env create -f environment.yml
+To copy/install a conda environment from python, do the following:<br />
+conda activate (your environment)<br />
+conda env export > environment.yml
+conda env create -f environment.yml <br />
 
 
 
