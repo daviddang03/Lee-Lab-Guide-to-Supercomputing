@@ -63,6 +63,7 @@ To activate conda on the cluster type: <br />
 To copy/install a conda environment from python, do the following:<br />
 conda activate (your environment)<br />
 conda env export > environment.yml<br />
+conda list --explicit > environment.txt (Try this if above doesn't work)<br />
 conda env create --name envname --file environment.yml <br />
 
 
