@@ -56,7 +56,34 @@ To run the file, simply type sbatch run_slurm.lumerical. To access the results, 
 <br />
 ![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/b035ee84-e5a6-4eea-b54e-8cf09e72c3e1)
 ![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/927e3e51-83ec-4fba-a8d8-4e3f32f62c67)
+# Running Jupyter Notebook on Greenplanet:<br />
+To use greenplanet via jupyter notebook, you need to do the following: <br />
+<br />
+1) Install miniconda on the DFS-L Directory: <br />
+cd wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh <br />
+chmod u+x Miniconda3-latest-Linux-x86_64.sh <br />
+mkdir /DFS-L/DATA/$(id -gn)/$USER/miniconda3 <br />
+ln -s /DFS-L/DATA/$(id -gn)/$USER/miniconda3 miniconda3 <br />
+./Miniconda3-latest-Linux-x86_64.sh -bu <br />
+<br />
+2) Activate miniconda in the terminal:<br />
+ml miniconda/3/own<br />
+<br />
+3) Create your miniconda environment:<br />
+conda create - n my_environment python<br />
+<br />
+4) Activate your miniconda environment:<br />
+conda activate my_environment<br />
+<br />
+5) conda install jupyterlab<br />
+<br />
+6) Get an interative node:<br />
+srun -c 2 -p nes2.8 --pty /bin/bash -i <br />
+<br />
+7) jupyter lab --no-browser --ip$(hostname) --port=8989 <br />
 
+8) On local machine, using mobaxterm use: <br />
+ssh -N -L 8989:login-i17:8989 dangd5@logingp.2. <br />
 # Miscellaneous:<br />
 To activate conda on the cluster type: <br />
 
