@@ -83,7 +83,7 @@ srun -c 2 -p nes2.8 --pty /bin/bash -i <br />
 7) jupyter lab --no-browser --ip$(hostname) --port=8989 <br />
 
 8) On local machine, using mobaxterm use: <br />
-ssh -N -L 8989:login-i17:8989 dangd5@logingp.2. <br />
+ssh -N -L 8989:login-i17:8989 dangd5@gplogin2.ps.uci.edu <br />
 # Miscellaneous:<br />
 To activate conda on the cluster type: <br />
 
