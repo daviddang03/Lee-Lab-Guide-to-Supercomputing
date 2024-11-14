@@ -80,7 +80,7 @@ conda activate my_environment<br />
 6) Get an interative node:<br />
 srun -c 2 -p nes2.8 --pty /bin/bash -i <br />
 <br />
-7) jupyter lab --no-browser --ip$(hostname) --port=8989 <br />
+7) jupyter lab --no-browser --ip $(hostname) --port=8989 <br />
 
 8) On local machine, using mobaxterm use: <br />
 ssh -N -L 8989:login-i17:8989 dangd5@gplogin2.ps.uci.edu <br />
