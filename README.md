@@ -84,6 +84,8 @@ srun -c 2 -p nes2.8 --pty /bin/bash -i <br />
 
 8) On local machine, using mobaxterm use: <br />
 ssh -N -L 8989:login-i17:8989 dangd5@gplogin2.ps.uci.edu <br />
+
+9) To finally access the Jupyter Notebook, visit this site: http://127.0.0.1:8989/
 # Miscellaneous:<br />
 To activate conda on the cluster type: <br />
 
