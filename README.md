@@ -87,6 +87,7 @@ ssh -N -L 8989:NAMEOFNODE:8989 dangd5@gplogin2.ps.uci.edu <br />
 <br />
 Note that name of node corresponds to the name of the node shown when you run jupyter notebook (EXAMPLE: c-25-25)<br />
 10) To finally access the Jupyter Notebook, visit this site: http://127.0.0.1:8989/ (you might have to copy and paste after token=)<br />
+11) To use Lumerical FDTD and its python API, use must cd to the following directory: /sopt/Lumerical/
 
 # Miscellaneous:<br />
 To activate conda on the cluster type: <br />
