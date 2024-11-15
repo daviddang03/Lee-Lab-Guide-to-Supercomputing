@@ -85,8 +85,7 @@ jupyter lab --no-browser --ip $(hostname) --port=8989 <br />
 <br />
 9) On your local machine, use mobaxterm and ssh tunnel to this address: <br />
 ssh -N -L 8989:NAMEOFNODE:8989 dangd5@gplogin2.ps.uci.edu <br />
-<br />
-Note that name of node corresponds to the name of the node shown when you run jupyter notebook (EXAMPLE: c-25-25)<br />
+Note that name of node corresponds to the name of the node shown when you run jupyter notebook (EXAMPLE: c-25-25). Also change the login username to your own obviously.<br />
 10) To finally access the Jupyter Notebook, visit this site: http://127.0.0.1:8989/ (you might have to copy and paste after token=)<br />
 11) To use Lumerical FDTD and its python API, use must cd to the following directory: /sopt/Lumerical/
 
