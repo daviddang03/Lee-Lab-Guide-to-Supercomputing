@@ -59,34 +59,35 @@ To run the file, simply type sbatch run_slurm.lumerical. To access the results, 
 # Running Jupyter Notebook on Greenplanet:<br />
 To use greenplanet via jupyter notebook, you need to do the following: <br />
 <br />
-1) Install miniconda on the DFS-L Directory: <br />
+1) Install miniconda on the DFS-L Directory:
+<br />
 cd wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh <br />
 chmod u+x Miniconda3-latest-Linux-x86_64.sh <br />
 mkdir /DFS-L/DATA/$(id -gn)/$USER/miniconda3 <br />
 ln -s /DFS-L/DATA/$(id -gn)/$USER/miniconda3 miniconda3 <br />
 ./Miniconda3-latest-Linux-x86_64.sh -bu <br />
 <br />
-2) Activate miniconda in the terminal:<br />
+3) Activate miniconda in the terminal:<br />
 ml miniconda/3/own<br />
 <br />
-3) Create your miniconda environment:<br />
+4) Create your miniconda environment:<br />
 conda create - n my_environment python<br />
 <br />
-4) Activate your miniconda environment:<br />
+5) Activate your miniconda environment:<br />
 conda activate my_environment<br />
 <br />
-5) conda install jupyterlab<br />
+6) conda install jupyterlab<br />
 <br />
-6) Get an interative node:<br />
+7) Get an interative node:<br />
 srun -c 2 -p nes2.8 --pty /bin/bash -i <br />
 <br />
-7) jupyter lab --no-browser --ip $(hostname) --port=8989 <br />
+8) jupyter lab --no-browser --ip $(hostname) --port=8989 <br />
 <br />
-8) On your local machine, use mobaxterm and ssh tunnel to this address: <br />
+9) On your local machine, use mobaxterm and ssh tunnel to this address: <br />
 ssh -N -L 8989:NAMEOFNODE:8989 dangd5@gplogin2.ps.uci.edu <br />
 <br />
 Note that name of node corresponds to the name of the node shown when you run jupyter notebook (EXAMPLE: c-25-25)<br />
-9) To finally access the Jupyter Notebook, visit this site: http://127.0.0.1:8989/ (you might have to copy and paste after token=)<br />
+10) To finally access the Jupyter Notebook, visit this site: http://127.0.0.1:8989/ (you might have to copy and paste after token=)<br />
 
 # Miscellaneous:<br />
 To activate conda on the cluster type: <br />
