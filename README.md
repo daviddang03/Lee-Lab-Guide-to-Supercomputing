@@ -58,8 +58,7 @@ To run the file, simply type sbatch run_slurm.lumerical. To access the results, 
 ![image](https://github.com/Howard-Lee-Nanophotonics-Lab/Lee-Lab-Guide-to-Supercomputing/assets/104177475/927e3e51-83ec-4fba-a8d8-4e3f32f62c67)
 # Running Jupyter Notebook on Greenplanet:<br />
 To use greenplanet via jupyter notebook, you need to do the following: <br />
-<br />
-1) Install miniconda on the DFS-L Directory:
+1) Install miniconda on the DFS-L Directory:<br />
 <br />
 cd wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh <br />
 chmod u+x Miniconda3-latest-Linux-x86_64.sh <br />
