@@ -91,7 +91,7 @@ Note that name of node corresponds to the name of the node shown when you run ju
 <br />
 11) To use Lumerical FDTD and its python API, use must cd to the following directory: /sopt/Lumerical/
 <br />
-# Installing MEEP on Greenplanet:<br />
+# Installing MEEP on Greenplanet: <br />
 1) conda activate my_environment <br />
 2) conda install -c conda-forge pymeep pymeep-extras <br />
 <br />
