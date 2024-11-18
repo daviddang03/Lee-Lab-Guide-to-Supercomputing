@@ -95,9 +95,16 @@ Note that name of node corresponds to the name of the node shown when you run ju
 1) conda activate my_environment <br />
 2) conda install -c conda-forge pymeep pymeep-extras <br />
 <br />
+# Using Alternate Conda Solver:
+<br />
+Using conda can be quite slow, so faster implementations of conda such as mamba will make installations much faster. To do this within conda, do the following:
+<br />
+1) conda install -n base conda-libmambda-solver
+2) After installing, simply point to the solver: conda install ... --solver=libmamba
+
+
 # Miscellaneous:<br />
 To activate conda on the cluster type: <br />
-
 To copy/install a conda environment from python, do the following:<br />
 conda activate (your environment)<br />
 conda env export > environment.yml<br />
