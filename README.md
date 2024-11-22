@@ -90,14 +90,12 @@ Note that name of node corresponds to the name of the node shown when you run ju
 10) To finally access the Jupyter Notebook, visit this site: http://127.0.0.1:8989/ (you might have to copy and paste after token=)<br />
 <br />
 11) To use Lumerical FDTD and its python API, use must cd to the following directory: /sopt/Lumerical/
-<br />
-<br />
-# + Installing MEEP on Greenplanet: <br />
+
+# Installing MEEP on Greenplanet: <br />
 1) conda activate my_environment <br />
 2) conda install -c conda-forge pymeep pymeep-extras 
-<br />
-<br />
-# Using Alternate Conda Solver:
+
+# Using Alternate Conda Solver:<br />
 <br />
 Using conda can be quite slow, so faster implementations of conda such as mamba will make installations much faster. To do this within conda, do the following:
 <br />
