@@ -99,7 +99,7 @@ Note that name of node corresponds to the name of the node shown when you run ju
 <br />
 Using conda can be quite slow, so faster implementations of conda such as mamba will make installations much faster. To do this within conda, do the following:
 <br />
-1) conda install -n base conda-libmambda-solver
+1) conda install -n base conda-libmambda-solver <br />
 2) After installing, simply point to the solver: conda install ... --solver=libmamba
 
 
