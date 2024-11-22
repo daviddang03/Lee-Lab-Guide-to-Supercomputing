@@ -94,7 +94,7 @@ Note that name of node corresponds to the name of the node shown when you run ju
 <br />
 # + Installing MEEP on Greenplanet: <br />
 1) conda activate my_environment <br />
-2) conda install -c conda-forge pymeep pymeep-extras <br />
+2) conda install -c conda-forge pymeep pymeep-extras 
 <br />
 <br />
 # Using Alternate Conda Solver:
@@ -113,5 +113,20 @@ conda env export > environment.yml<br />
 conda list --explicit > environment.txt (Try this if above doesn't work)<br />
 conda env create --name envname --file environment.yml <br />
 
-
+# Cisco Anyconnect Errors: <br />
+Click Start and type "cmd". <br />
+ <br />
+- Right click on Command Prompt and run it as administrator. <br />
+- Copy and paste the following line one at a time, pressing enter each time: <br />
+ <br />
+netsh winsock reset - and press Enter. <br />
+netsh int ip reset - and press Enter. <br />
+ipconfig / release - and press Enter. <br />
+ipconfig / renew - and press Enter. <br />
+ipconfig / flushdns - and press Enter <br />
+ <br />
+You can also try to reset your DNS service with the following steps: <br />
+- Press the Windows key + R and type "services.msc" and press OK. <br />
+- Scroll down to find the DNS client. <br />
+- Right click on it and click Restart. <br />
 
