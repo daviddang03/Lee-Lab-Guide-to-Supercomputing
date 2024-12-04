@@ -128,3 +128,6 @@ You can also try to reset your DNS service with the following steps: <br />
 - Scroll down to find the DNS client. <br />
 - Right click on it and click Restart. <br />
 
+# Useful GitHUB Commands: <br />
+Removes all of the files in git status, useful when git push fails due to large file size: <br />
+git rm -r --cached .
