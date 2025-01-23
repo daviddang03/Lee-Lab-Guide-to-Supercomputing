@@ -131,3 +131,6 @@ You can also try to reset your DNS service with the following steps: <br />
 # Useful GitHUB Commands: <br />
 Removes all of the files in git status, useful when git push fails due to large file size: <br />
 git rm -r --cached .
+
+# Interesting Machine Learning Links : <br />
+https://datascience.stackexchange.com/questions/58376/gumbel-softmax-trick-vs-softmax-with-temperature
